@@ -40,8 +40,8 @@ mosquitto_pub -h 192.168.2.22 -p 1883 -m '{ "idx" : 152 , "nvalue" : 0, "svalue"
 
 Installation
 
-wget https://github.com/alive-corpse/LYWSD02-LYWSD03MMC-MQTT/archive/master.zip
-unzip master.zip
+wget https://github.com/telewy/Xiaomi-Mi2-LYWSD03MMC-MQTT/archive/refs/heads/main.zip
+unzip main.zip
 cd LYWSD03MMC-MQTT/
 
 Then edit mqtt.conf file to fill it up with your MQTT credentials. Do not use spaces between equal sign and values/parameters names.
