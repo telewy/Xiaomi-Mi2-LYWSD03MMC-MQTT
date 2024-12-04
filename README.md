@@ -23,15 +23,17 @@ sudo apt-get install bluez-tools mosquitto-clients
 
 Domoticz server is working, mqtt server side is working. 
 In my case when I send mqtt message I use following syntax:
+
 mosquitto_pub -h dodmotczhostIPAddress -p portID -m '{ "idx" : deviceId , "nvalue" : 0, "svalue" : "temperature;humidity %;batteryLevel", "Battery" : batteryVoltage, "RSSI" : 12 }' -t 'domoticzTopic'
+
 where
-dodmotczhostIPAddress - domoticz server IP address
-portID - domoticz port number
-deviceId - deviceID - the number of device assigned in domotucz to the sensor
-temperature - measured temperature
-humidity - measured humidity
-batteryLevel - measured batteryLevel
-batteryVoltage - measured batteryVoltage
+1. dodmotczhostIPAddress - domoticz server IP address
+2. portID - domoticz port number
+3. deviceId - deviceID - the number of device assigned in domotucz to the sensor
+4. temperature - measured temperature
+5. humidity - measured humidity
+6. batteryLevel - measured batteryLevel
+7. batteryVoltage - measured batteryVoltage
 
 example: mosquitto_pub -h 192.168.2.22 -p 1883 -m '{ "idx" : 152 , "nvalue" : 0, "svalue" : "20.12;44 %;1", "Battery" : 99, "RSSI" : 12 }' -t 'domoticz/in'
 
@@ -39,7 +41,7 @@ Installation
 
 wget https://github.com/alive-corpse/LYWSD02-LYWSD03MMC-MQTT/archive/master.zip
 unzip master.zip
-cd LYWSD02-LYWSD03MMC-MQTT-master/
+cd LYWSD03MMC-MQTT/
 
 Then edit mqtt.conf file to fill it up with your MQTT credentials. Do not use spaces between equal sign and values/parameters names.
 
