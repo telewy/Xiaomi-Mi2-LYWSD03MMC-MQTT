@@ -104,4 +104,5 @@ First run manually to check if it works properly
    Humidity: 42
 4. check in domoticz if data is visible
 5. add entry to cron
+   
   */10 * * * * timeout 59 $HOME/LYWSD03MMC-MQTT/lyw.sh A4:C1:38:0B:81:47 A4:C1:38:E9:7A:4A A4:C1:38:8D:29:E0 > /dev/null 2>&1
