@@ -35,7 +35,8 @@ where
 6. batteryLevel - measured batteryLevel
 7. batteryVoltage - measured batteryVoltage
 
-example: mosquitto_pub -h 192.168.2.22 -p 1883 -m '{ "idx" : 152 , "nvalue" : 0, "svalue" : "20.12;44 %;1", "Battery" : 99, "RSSI" : 12 }' -t 'domoticz/in'
+example: 
+mosquitto_pub -h 192.168.2.22 -p 1883 -m '{ "idx" : 152 , "nvalue" : 0, "svalue" : "20.12;44 %;1", "Battery" : 99, "RSSI" : 12 }' -t 'domoticz/in'
 
 Installation
 
